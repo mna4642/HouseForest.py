@@ -5,6 +5,7 @@
 import turtle as turtle
 import random
 import math
+
 math.sqrt(2)
 wood = (100)
 halfwood = ((wood / 2) * math.sqrt(2))
@@ -154,12 +155,12 @@ def main():
     :post: pos (0,0), heading (east), up
     :return: None
     """
-    trees = int(input("How many trees in your forest?"))
+    trees = int(input("How many trees in your forest? "))
     while trees != 1 and trees != 2 and trees != 3 and trees != 4:
-        trees = int(input("How many trees in your forest?"))
-    house = (input("Is there a house in the forest (yes/no)?"))
+        trees = int(input("How many trees in your forest? "))
+    house = (input("Is there a house in the forest (yes/no)? "))
     while house != 'yes' and house != 'no':
-        house = input("Is there a house in the forest (yes/no)?")
+        house = input("Is there a house in the forest (yes/no)? ")
 
     init()
     for x in range(0,trees):
@@ -190,7 +191,9 @@ def main():
     sun(amtwood, halfamtwood)
     input("Day is done. Press enter to quit")
     turtle.bye()
-    turtle.mainloop()
+
+    # turtle.mainloop()
 
 if __name__ == "__main__":
+
     main()
